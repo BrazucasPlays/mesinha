@@ -3,43 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casa Decor Londrina - Mesinhas de Cabeceira</title>
+    <title>Casa Decor Londrina - Loja Oficial</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        :root { --shopee-orange: #ee4d2d; --text-dark: #333; }
-        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #f9f9f9; margin: 0; padding: 20px; display: flex; justify-content: center; }
-        .card { background: white; max-width: 450px; width: 100%; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden; text-align: center; }
-        .header-brand { background: var(--shopee-orange); color: white; padding: 15px; font-weight: bold; font-size: 20px; }
-        .content { padding: 25px; }
-        img { width: 100%; border-radius: 10px; margin-bottom: 15px; }
-        h1 { font-size: 22px; color: var(--text-dark); margin: 10px 0; }
-        .price-badge { background: #fff5f2; color: var(--shopee-orange); padding: 8px 15px; border-radius: 50px; font-weight: bold; display: inline-block; margin-bottom: 20px; border: 1px solid var(--shopee-orange); }
-        .btn-shopee { display: flex; align-items: center; justify-content: center; background-color: var(--shopee-orange); color: white; text-decoration: none; padding: 18px; border-radius: 12px; font-weight: bold; font-size: 18px; gap: 10px; transition: 0.3s; }
-        .btn-shopee:hover { background-color: #d73211; transform: scale(1.02); }
-        .benefits { text-align: left; margin: 20px 0; font-size: 14px; color: #555; line-height: 1.8; }
+        :root { --shopee: #ee4d2d; --whatsapp: #25d366; --dark: #333; }
+        body { font-family: 'Segoe UI', sans-serif; background: #f0f2f5; margin: 0; padding: 10px; text-align: center; }
+        .card { max-width: 450px; background: white; margin: 20px auto; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .header { background: var(--shopee); color: white; padding: 20px; font-weight: bold; font-size: 22px; }
+        .content { padding: 20px; }
+        img { width: 100%; border-radius: 15px; margin-bottom: 15px; }
+        h1 { font-size: 20px; color: var(--dark); }
+        .btn { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 18px; border-radius: 12px; text-decoration: none; font-weight: bold; font-size: 18px; margin-top: 15px; transition: 0.3s; }
+        .btn-shopee { background: var(--shopee); color: white; }
+        .btn-whatsapp { background: white; color: var(--whatsapp); border: 2px solid var(--whatsapp); }
+        .btn:hover { transform: scale(1.02); }
+        /* Botão Flutuante */
+        .float-wa { position: fixed; width: 60px; height: 60px; bottom: 20px; right: 20px; background-color: var(--whatsapp); color: #FFF; border-radius: 50px; text-align: center; font-size: 30px; box-shadow: 2px 2px 10px rgba(0,0,0,0.2); z-index: 100; display: flex; align-items: center; justify-content: center; }
     </style>
 </head>
 <body>
-    <div class="card">
-        <div class="header-brand">Casa Decor Londrina</div>
-        <div class="content">
-            <img src="https://cf.shopee.com.br/file/br-11134207-7qukw-lh6p6y6p6y6p6y" alt="Mesa de Cabeceira Casa Decor">
-            
-            <div class="price-badge">OFERTAS EXCLUSIVAS NA SHOPEE</div>
-            <h1>Mesinhas de Cabeceira Luxo</h1>
-            
-            <div class="benefits">
-                <i class="fas fa-check-circle" style="color: #2e7d32;"></i> Qualidade Premium em MDF<br>
-                <i class="fas fa-check-circle" style="color: #2e7d32;"></i> Envio direto de Londrina/PR<br>
-                <i class="fas fa-check-circle" style="color: #2e7d32;"></i> Compra Segura e Garantida
-            </div>
 
-            <a href="https://shopee.com.br/casadecorlondrina" target="_blank" class="btn-shopee">
-                <i class="fas fa-shopping-bag"></i> IR PARA LOJA OFICIAL
-            </a>
+    <div class="card">
+        <div class="header">Casa Decor Londrina</div>
+        <div class="content">
+            <img src="https://cf.shopee.com.br/file/br-11134207-7qukw-lh6p6y6p6y6p6y" alt="Mesa de Cabeceira">
+            <h1>Mesinhas de Cabeceira Premium</h1>
+            <p>Direto da fábrica em Londrina. Enviamos montadas!</p>
             
-            <p style="font-size: 12px; color: #999; margin-top: 20px;">Acesse nossa loja oficial e confira todos os modelos.</p>
+            <a href="https://shopee.com.br/casadecorlondrina" class="btn btn-shopee">
+                <i class="fas fa-shopping-cart"></i> COMPRAR NA SHOPEE
+            </a>
+
+            <a href="https://wa.me/5543999999999?text=Olá! Vi o anúncio das mesinhas e gostaria de mais informações." class="btn btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> FALAR COM VENDEDOR
+            </a>
         </div>
     </div>
+
+    <a href="https://wa.me/5543984248056" class="float-wa" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
 </body>
 </html>
